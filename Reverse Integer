@@ -1,5 +1,7 @@
 // Limiting factor of int 32.
 // used long long int to store reverse number.
+// Time Complexity is 0(n).
+
 
 class Solution {
 public:
