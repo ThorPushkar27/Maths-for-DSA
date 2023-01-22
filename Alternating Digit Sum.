@@ -1,0 +1,20 @@
+//Time Complexity= O(n)
+//Space Complexity = O(1)
+// Learnt.
+// Jab bhi Number ke through iterate karna ho, Convert it to string and then - "0".
+
+class Solution {
+public:
+    int alternateDigitSum(int n) {
+        string s = to_string(n);
+        int a = s.size();
+        int sum=0;
+        for(int i =0; i<a; i++){
+            if(i%2==0) sum+= (s[i]-'0');
+            else sum-= (s[i]-'0');
+            
+        }
+        return sum;
+        
+    }
+};
